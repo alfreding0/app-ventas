@@ -4,10 +4,10 @@
 
     <div class="row" style="margin-top: 5%">
         <div class="col s4">
-            <a href="{{ route('personal.create') }}" class="waves-effect waves-light btn dark-primary-color">Registrar</a>
+            <a href="{{ route('personal.create') }}" class="waves-effect waves-light btn-small"><i class="material-icons left">add_to_queue</i>Registrar</a>
         </div>
         <div class="col s8">
-            <h5>LISTA DE PERSONAL</h5>
+            <h5>LISTA DE PRODUCTOS</h5>
         </div>
         <div class="col s12 m12 l12 xl12">
             <div class="card">
@@ -16,15 +16,13 @@
                     <tr>
                         <th>ID</th>
                         <th>nombre</th>
-                        <th>apellido</th>
-                        <th>direccion</th>
-                        <th>telefono</th>
-                        <th>genero</th>
+                        <th>STOCK</th>
+                        <th>precio (Bs.)</th>
                         <th>Acciones</th>
                     </tr>
                     </thead>
                     <tbody>
-                        @foreach($personales as $persona)
+                        {{-- @foreach($personales as $persona)
                             <tr>
                                 <td>{{ $persona->id }}</td>
                                 <td>{{ $persona->nombres }}</td>
@@ -38,7 +36,7 @@
                                     <a href="{{ route('personal.destroy', [$persona->id]) }}"><span class="new badge red" data-badge-caption="eliminar"></span></a>
                                 </td>
                             </tr>
-                        @endforeach
+                        @endforeach --}}
                     </tbody>
                 </table>
             </div>
